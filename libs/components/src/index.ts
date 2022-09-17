@@ -1,1 +1,1 @@
-export * from './lib/Components';
+export * as ProfileButtons from './lib/profile-buttons';

@@ -1,21 +1,19 @@
 import React from 'react';
+import Center from './Center';
 
 import Sidebar from './Sidebar';
 
 export interface IProps {
-  leftSidebar?: React.ReactNode
-  children?: React.ReactNode
-  rightSidebar?: React.ReactNode
+  signOut: () => void
 }
 
 
 
-const Main: React.FC<IProps> = ({ leftSidebar, children, rightSidebar }) => {
+const Main: React.FC<IProps> = ({ signOut }) => {
   return (
     <main className='flex'>
-      {leftSidebar ? <div className="flex"><Sidebar>{leftSidebar}</Sidebar></div> : null}
-      {children ? <div className="flex">{children}</div> : null}
-      {rightSidebar ? <div className="flex"><Sidebar>{rightSidebar}</Sidebar></div> : null}
+      <Sidebar signOut={signOut }/>
+      <Center />
     </main>
   )
 }
