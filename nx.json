@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "my-spotify-recoil",
+  "npmScope": "spotify-nx-nextjs-recoil",
   "affected": {
     "defaultBase": "master"
   },

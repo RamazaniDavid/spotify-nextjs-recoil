@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   theme: {
     extend: {},
   },
@@ -8,5 +9,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@headlessui/tailwindcss'),
+    require('tailwind-scrollbar-hide'),
   ],
 };

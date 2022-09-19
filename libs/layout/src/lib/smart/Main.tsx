@@ -3,16 +3,13 @@ import Center from './Center';
 
 import Sidebar from './Sidebar';
 
-export interface IProps {
-  signOut: () => void
-}
 
 
 
-const Main: React.FC<IProps> = ({ signOut }) => {
+const Main: React.FC = () => {
   return (
     <main className='flex'>
-      <Sidebar signOut={signOut }/>
+      <Sidebar  />
       <Center />
     </main>
   )

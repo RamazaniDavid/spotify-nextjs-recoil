@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth';
 import SpotifyProvider from 'next-auth/providers/spotify';
 
-import { spotifyUtils } from '@my-spotify-recoil/common';
+import { spotifyUtils } from '@spotify-nx-nextjs-recoil/common';
 
 async function refreshAccessToken(token) {
   try {

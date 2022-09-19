@@ -1,38 +1,17 @@
 import React from 'react'
-import { Menu } from '@headlessui/react'
 import { signOut, useSession } from 'next-auth/react';
+import { FaChevronDown, FaUserAlt } from 'react-icons/fa';
 
 function Normal() {
     const { data: session, status } = useSession();
     return (
-        <Menu>
-            <Menu.Button>{session?.user?.name}</Menu.Button>
-            <Menu.Items>
-                <Menu.Item>
-                    {({ active }) => (
-                        <a
-                            className={`${active && 'bg-blue-500'}`}
-                            href="https://www.spotify.com/account/overview/"
-                        >
-                            Account
-                        </a>
-                    )}
-                </Menu.Item>
-                <Menu.Item>
-                    {({ active }) => (
-                        <a
-                            className={`${active && 'bg-blue-500'}`}
-                            href="/account-settings"
-                            onClick={() => {
-                                signOut()
-                            }}
-                        >
-                            Log Out
-                        </a>
-                    )}
-                </Menu.Item>
-            </Menu.Items>
-        </Menu>
+        <div className='flex items-center p-1 pr-2 space-x-3 bg-black rounded-full cursor-pointer opacity-90 hover:opacity-80'>
+            {session?.user?.image && session?.user?.name ?
+                <img src={session?.user?.image} alt={session?.user?.name}
+                    className="w-10 h-10 rounded-full" /> : <FaUserAlt />}
+            <h2>{session?.user?.name} </h2>
+            <FaChevronDown />
+        </div>
     )
 }
 

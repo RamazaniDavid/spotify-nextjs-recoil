@@ -14,9 +14,9 @@ const SmartLayout: React.FC = () => {
 
 
     return (
-        <div className='bg-black h-screen overflow-hidden text-gray-300'>
+        <div className='h-screen overflow-hidden text-gray-300 bg-black'>
             <Header></Header>
-            <Main signOut={signOut} />
+            <Main />
             <Footer>
                 <div>player</div>
             </Footer>

@@ -1,3 +1,3 @@
 import Normal from './Normal';
 
-export { Normal };
+export const ProfileButtons={ Normal };

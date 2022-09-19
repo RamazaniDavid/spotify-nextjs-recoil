@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-spotify-recoil/common": ["libs/common/src/index.ts"],
-      "@my-spotify-recoil/components": ["libs/components/src/index.ts"],
-      "@my-spotify-recoil/layout": ["libs/layout/src/index.ts"],
-      "@my-spotify-recoil/store": ["libs/store/src/index.ts"]
+      "@spotify-nx-nextjs-recoil/common": ["libs/common/src/index.ts"],
+      "@spotify-nx-nextjs-recoil/components": ["libs/components/src/index.ts"],
+      "@spotify-nx-nextjs-recoil/layout": ["libs/layout/src/index.ts"],
+      "@spotify-nx-nextjs-recoil/store": ["libs/store/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
